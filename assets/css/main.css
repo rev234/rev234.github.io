@@ -139,7 +139,7 @@ p {
 }
 
 #Pic2 {
-    background-image: url(../img/_product2.jpg);
+    background-image: url(../img/product2.jpg);
     background-position: center;
     -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
     -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
@@ -154,7 +154,7 @@ p {
 }
 
 #Pic3 {
-    background-image: url(../img/_product3.jpg);
+    background-image: url(../img/product3.jpg);
     background-position: center;
     -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
     -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
