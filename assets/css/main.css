@@ -124,7 +124,7 @@ p {
 }
 
 #Pic1 {
-    background-image: url(../img/_product1.jpg);
+    background-image: url(../img/product1.jpg);
     background-position: center;
     -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
     -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
