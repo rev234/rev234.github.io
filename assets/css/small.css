@@ -1,0 +1,335 @@
+@charset "UTF-8";
+@media screen and (max-width: 415px) {
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: "Century Schoolbook";
+    }
+    .container {
+        width: 100%;
+        height: 900px;
+        z-index: 100;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    h1 {
+        margin: 0;
+        text-decoration: none;
+    }
+    /* Home */
+    
+    #home {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/home1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    #heading {
+        color: white;
+        background-color: rgba(140, 198, 65, 0.8);
+        width: 100%;
+        height: 125px;
+        border-radius: 0px 10px 10px 0px;
+        padding-top: 50px;
+        text-align: center;
+        line-height: .8em;
+        padding-left: 2%;
+        padding-right: 2%;
+        position: relative;
+        top: 50px;
+        left: 0px;
+        text-shadow: -2px 3px 4px rgba(150, 150, 150, 1);
+        -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+        -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+        box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+        transition: 1s ease-in-out;
+    }
+    #heading h1 {
+        font-size: 2.2em;
+        transition: 1s ease-in-out;
+    }
+    #heading h2 {
+        font-size: 1.2em;
+        transition: 1s ease-in-out;
+    }
+    /* Gallery */
+    
+    @-webkit-keyframes gallery {
+        0% {
+            opacity: 0;
+            height: 0%;
+            font-size: 0em;
+        }
+        50% {
+            opacity: .5;
+            font-size: 0em;
+            height: 15%;
+        }
+        100% {
+            opacity: 1;
+            height: 30%;
+            font-size: 1em;
+        }
+    }
+    #gallery {
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        top: 30%;
+    }
+    .galleryPic {
+        display: inline-block;
+        width: 100%;
+        height: 30%;
+        margin-left: 0;
+        margin-right: auto;
+        list-style: none;
+        transition: all 2s ease 0s;
+    }
+    #Pic1 {
+    
+    }
+    #Pic2 {
+        top: 33%;
+    }
+    #Pic3 {
+        top: 63%;
+    }
+    #logo {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+        background-image: url(../img/scentsy_logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    #logoWhite {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+        background-image: url(../img/scentsy_logoWhite.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    /* Join */
+    
+    #join {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/purple_join.jpg);
+        background-size: cover;
+        z-index: -1;
+        transition: all 2s ease-in-out;
+    }
+    #joinHead {
+        width: 75%;
+        height: 30%;
+        text-align: center;
+        font-size: 1.5em.;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #joinHead div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 2px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 100px;
+    }
+    #joinHead h1 {
+        padding-top: 10%;
+        font-size: 3em;
+    }
+    #joinHead p {
+        color: white;
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-top: 20px
+    }
+    #buttonJoin {
+        width: 45%;
+        height: 75px;
+        background-color: rgba(140, 198, 65, 0.75);
+        border-radius: 10px;
+        position: relative;
+        top: 355px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 1s ease;
+    }
+    #buttonJoin h3 {
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16.5px;
+        padding-bottom: 16.5px;
+    }
+    #takeMe h3 {
+        font-size: 2.2em;
+        ;
+    }
+    #buttonJoin:hover {
+        transition: all 1s ease;
+        background-color: rgba(140, 198, 65, 1);
+    }
+    /* About */
+    
+    #about {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/white_about.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+    #aboutHead {
+        height: 125px;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutHead h1 {
+        color: #673291;
+        text-align: center;
+        font-size: 4em;
+    }
+    #aboutHead div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 2px;
+        background-color: #673291;
+    }
+    #vidPlayer {
+        height: 400px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        background-color: #673291;
+    }
+    /* Contact */
+    
+    #contact {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/green_signUp.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+    #contactHead {
+        height: 125px;
+        width: 75%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #contactHead h1 {
+        font-size: 2.5em;
+    }
+    #contactHead div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 2px;
+        background-color: #FFFFFF;
+    }
+    /* Form */
+    
+    form {
+        display: inline-block;
+        height: 400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        text-align: center;
+    }
+    form label {
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    form input {
+        border-radius: 25px;
+        border: none;
+        width: 50%;
+        height: 50px;
+        background-color: rgba(250, 250, 250, 0.65);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.5em;
+        color: #673291;
+    }
+    form input:focus {
+        box-shadow: none;
+        border-style: none;
+        outline: none;
+    }
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #submit {
+        width: 25%;
+        height: 40px;
+    }
+    /* Footer */
+    
+    footer {
+        width: 100%;
+        height: 75px;
+        background-color: rgba(50, 50, 50, 1);
+    }
+    .infoBox {
+        display: inline-block;
+        color: #8cc641;
+        border-left: 2px solid black;
+        text-align: center;
+        padding-top: 0;
+        margin: 0 0 0 0;
+        font-size: .5em;
+        width: 23.4%;
+        transition: all .2s ease-in-out;
+    }
+    #mexico:hover {
+        color: white;
+        background-color: green;
+        transition: all .2s ease-in-out;
+    }
+    #europe:hover {
+        color: black;
+        background-color: skyblue;
+        transition: all .2s ease-in-out;
+    }
+    #scentsy:hover {
+        color: #8cc641;
+        background-color: #673291;
+        transition: all .2s ease-in-out;
+    }
+    #facebook:hover {
+        color: white;
+        background-color: #3B5998;
+        transition: all .2s ease-in-out;
+    }

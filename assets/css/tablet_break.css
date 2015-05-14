@@ -1,0 +1,415 @@
+@charset "UTF-8";
+@media screen and (max-width: 732px) {
+    /* #673291 Purple */
+    /* #8cc641 Green */
+    /* #ffffff White */
+    /* General Styles */
+    
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: "Century Schoolbook";
+    }
+    .container {
+        width: 100%;
+        height: 900px;
+        z-index: 100;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    h1 {
+        margin: 0;
+        text-decoration: none;
+    }
+    /* Home */
+    /* Animations */
+    
+    @-webkit-keyframes gallery {
+        0% {
+            opacity: 0;
+            width: 5%;
+            font-size: 0em;
+        }
+        50% {
+            opacity: .5;
+            font-size: 0em;
+            width: 15%;
+        }
+        100% {
+            opacity: 1;
+            width: 25%;
+            font-size: 1em;
+        }
+    }
+    #home {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/home1.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+    #heading {
+        color: white;
+        background-color: rgba(140, 198, 65, 0.8);
+        width: 55%;
+        height: 125px;
+        border-radius: 0px 10px 10px 0px;
+        padding-top: 50px;
+        text-align: right;
+        line-height: .8em;
+        padding-left: 2%;
+        padding-right: 2%;
+        position: relative;
+        top: 50px;
+        left: 0px;
+        text-shadow: -2px 3px 4px rgba(150, 150, 150, 1);
+        -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+        -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+        box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+        transition: 1s ease-in-out;
+    }
+    #heading h1 {
+        font-size: 2em;
+        transition: 1s ease-in-out;
+    }
+    #heading h2 {
+        font-size: 1em;
+        transition: 1s ease-in-out;
+    }
+    /* Gallery */
+    
+    @-webkit-keyframes gallery {
+        0% {
+            opacity: 0;
+            height: 0px;
+            width: 0%;
+            font-size: 0em;
+        }
+        50% {
+            opacity: .5;
+            font-size: 0em;
+            height: 100px;
+            width: 50%;
+        }
+        100% {
+            opacity: 1;
+            height: 200px;
+            width: 100%;
+            font-size: 1em;
+        }
+    }
+    #gallery {
+        height: 650px;
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0%;
+    }
+    .galleryPic {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        min-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        height: 175px;
+        list-style: none;
+        transition: all 2s ease 0s
+    }
+    .overlay {
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .overlay h1 {
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0px;
+        padding-top: 6%;
+        text-align: center;
+    }
+    #Pic1 {
+        
+    }
+    #Pic2 {
+       top: 191px;
+    }
+    #Pic3 {
+        top: 367px;
+    }
+    #logo {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+        background-image: url(../img/scentsy_logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    #logoWhite {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+        background-image: url(../img/scentsy_logoWhite.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    /* Join */
+    
+    #join {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/purple_join.jpg);
+        background-size: cover;
+        z-index: -1;
+        transition: all 2s ease-in-out;
+    }
+    #joinHead {
+        width: 85%;
+        height: 40%;
+        text-align: center;
+        font-size: 1.5em.;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #joinHead h1 {
+        padding-top: 10%;
+        font-size: 3em;
+    }
+    #joinHead p {
+        color: white;
+        font-size: 1.1em;
+        line-height: 1.4em;
+        margin-top: 50px
+    }
+    #joinHead div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        height: 2px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 120px;
+    }
+    #buttonJoin {
+        width: 45%;
+        height: 100px;
+        background-color: rgba(140, 198, 65, 0.75);
+        border-radius: 10px;
+        position: relative;
+        top: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 1s ease;
+    }
+    #buttonJoin h3 {
+        color: white;
+        font-size: 5em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    #takeMe {
+        height: 0;
+        width: 0;
+    }
+    #takeMe h3 {
+        font-size: 2.5em;
+        ;
+    }
+    #buttonJoin:hover {
+        transition: all 1s ease;
+        background-color: rgba(140, 198, 65, 1);
+    }
+    /* About */
+    
+    #about {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/white_about.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+    #aboutHead {
+        height: 125px;
+        width: 50%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutHead h1 {
+        color: #673291;
+        text-align: center;
+        font-size: 5em;
+    }
+    #aboutHead div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 2px;
+        background-color: #673291;
+    }
+    #vidPlayer {
+        height: 500px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        background-color: #673291;
+    }
+    /* Contact */
+    
+    #contact {
+        width: 100%;
+        height: 900px;
+        background-image: url(../img/green_signUp.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+    #contactHead {
+        height: 125px;
+        width: 75%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #contactHead div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 2px;
+        background-color: #FFFFFF;
+    }
+    /* Form */
+    
+    form {
+        display: inline-block;
+        height: 400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        text-align: center;
+    }
+    form label {
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    form input {
+        border-radius: 25px;
+        border: none;
+        width: 50%;
+        height: 50px;
+        background-color: rgba(250, 250, 250, 0.65);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 2em;
+        color: #673291;
+    }
+    form input:focus {
+        box-shadow: none;
+        border-style: none;
+        outline: none;
+    }
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #submit {
+        width: 25%;
+        height: 40px;
+    }
+    /* Footer */
+    
+    footer {
+        width: 100%;
+        height: 75px;
+        background-color: rgba(50, 50, 50, 1);
+    }
+    .infoBox {
+        display: inline-block;
+        color: #8cc641;
+        height: 50px;
+        width: 23.8%;
+        border-left: 2px solid black;
+        text-align: center;
+        padding-top: 1%;
+        margin-top: 0px;
+        font-size: .8em;
+        transition: all .2s ease-in-out;
+    }
+    #mexico:hover {
+        color: white;
+        background-color: green;
+        transition: all .2s ease-in-out;
+    }
+    #europe:hover {
+        color: white;
+        background-color: skyblue;
+        transition: all .2s ease-in-out;
+    }
+    #scentsy:hover {
+        color: #8cc641;
+        background-color: #673291;
+        transition: all .2s ease-in-out;
+    }
+    #facebook:hover {
+        color: white;
+        background-color: #3B5998;
+        transition: all .2s ease-in-out;
+    }
+        /* Break Before Phone */
+    @media screen and (max-width: 489px) {
+        #heading h1{
+            font-size: 1.68em;
+        }
+        #joinHead div{
+            margin-top: 50px;
+        }
+        #buttonJoin{
+            height: 50px;
+            margin-top: 19%;
+        }
+        #buttonJoin h3{
+            padding-bottom: 5px;
+            padding-top: 5px;
+            font-size: 2em;
+        }
+        form{
+            top: 275px;
+            left: 0;
+        }
+        .infoBox{
+            width: 23.5%;
+        }
+        #aboutHead{
+            width: 100%;
+        }
+        #aboutHead h1{
+            font-size: 4em;
+        }
+        #vidPlayer{
+            width: 100%;
+            height: 300px;
+            margin-top: 30%;
+        }
+    }

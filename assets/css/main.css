@@ -1,0 +1,446 @@
+/* #673291 Purple */
+/* #8cc641 Green */
+/* #ffffff White */
+/* General Styles */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Century Schoolbook";
+}
+
+.container {
+    width: 100%;
+    height: 900px;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5em;
+    padding-bottom: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+/* Home */
+
+#home {
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/home1.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+/* Heading Animation */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes gallery {
+    0% {
+        opacity: 0;
+        width: 5%;
+        height: 0%;
+        font-size: 0em;
+    }
+    50% {
+        width: 15%;
+        height: 50%;
+    }
+    100% {
+        opacity: 1;
+        width: 25%;
+        height: 100%;
+        
+    }
+}
+
+#heading {
+    color: white;
+    background-color: rgba(140, 198, 65, 0.8);
+    width: 45%;
+    height: 125px;
+    border-radius: 0px 10px 10px 0px;
+    padding-top: 50px;
+    text-align: right;
+    line-height: .8em;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    text-shadow: -2px 3px 4px rgba(150, 150, 150, 1);
+    -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    transition: all 1s ease-in-out;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+/* Gallery */
+
+#gallery {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 28%;
+    overflow: hidden;
+}
+
+.galleryPic {
+    display: inline-block;
+    width: 25%;
+    height: 400px;
+    margin-left: 4%;
+    margin-right: 0%;
+    text-align: center;
+    list-style: none;
+    transition: all .5s ease 0s;
+}
+
+.galleryPic:hover {
+    opacity: .80;
+}
+
+#Pic1 {
+    background-image: url(../img/_product1.jpg);
+    background-position: center;
+    -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    -webkit-animation-name: gallery;
+    animation-name: gallery;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    transition: all .5s ease 0s;
+}
+
+#Pic2 {
+    background-image: url(../img/_product2.jpg);
+    background-position: center;
+    -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    -webkit-animation-name: gallery;
+    animation-name: gallery;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    transition: all .5s ease 0s;
+}
+
+#Pic3 {
+    background-image: url(../img/_product3.jpg);
+    background-position: center;
+    -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.60);
+    -webkit-animation-name: gallery;
+    animation-name: gallery;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    transition: all .5s ease 0s;
+}
+
+.overlay {
+    height: 100px;
+    font-size: .3em;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.overlay h1{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#logo {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    background-image: url(../img/scentsy_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    transition: all 4s ease-in-out;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+#logoWhite {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    background-image: url(../img/scentsy_logoWhite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+/* Join */
+
+#join {
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/purple_join.jpg);
+    background-size: cover;
+    z-index: -1;
+    transition: all 2s ease-in-out;
+}
+
+#joinHead {
+    width: 60%;
+    height: 40%;
+    text-align: center;
+    font-size: 1.5em.;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#joinHead h1 {
+    padding-top: 20px;
+}
+
+#joinHead p {
+    color: white;
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+#joinHead div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 120px;
+}
+
+#buttonJoin {
+    width: 30%;
+    height: 100px;
+    background-color: rgba(140, 198, 65, 0.75);
+    border-radius: 10px;
+    position: relative;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s ease;
+}
+
+#buttonJoin h3 {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+#takeMe {
+    height: 0;
+    width: 0;
+}
+
+#buttonJoin:hover {
+    transition: all 1s ease;
+    background-color: rgba(140, 198, 65, 1);
+}
+/* About */
+
+#about {
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/white_about.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+#aboutHead {
+    height: 125px;
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutHead h1 {
+    color: #673291;
+    text-align: center;
+}
+
+#aboutHead div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 2px;
+    background-color: #673291;
+}
+
+#vidPlayer {
+    height: 600px;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #673291;
+    opacity: 1;
+}
+/* Contact */
+
+#contact {
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/green_signUp.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+#contactHead {
+    height: 125px;
+    width: 75%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#contactHead h1 {
+    font-size: 500%;
+}
+
+#contactHead div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+/* Form */
+
+form {
+    display: inline-block;
+    height: 400px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+    left: 28%;
+    text-align: center;
+}
+
+form label {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+form input {
+    border-radius: 25px;
+    border: none;
+    width: 50%;
+    height: 100px;
+    background-color: rgba(250, 250, 250, 0.65);
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2.5em;
+    color: #673291;
+    min-width: 300px;
+}
+
+form input:focus {
+    box-shadow: none;
+    border-style: none;
+    outline: none;
+}
+
+.form {
+    margin-left: 50px;
+    margin-right: auto;
+    text-align: center;
+}
+
+#submit {
+    width: 35%;
+    height: 80px;
+}
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.infoBox {
+    display: inline-block;
+    color: #8cc641;
+    height: 50px;
+    width: 24.6%;
+    border-left: 2px solid black;
+    text-align: center;
+    padding-top: 1%;
+    margin-top: 0px;
+    font-size: 1.8em;
+    transition: all .2s ease-in-out;
+}
+
+#mexico:hover {
+    color: white;
+    background-color: green;
+    transition: all .2s ease-in-out;
+}
+
+#europe:hover {
+    color: black;
+    background-color: skyblue;
+    transition: all .2s ease-in-out;
+}
+
+#scentsy:hover {
+    color: #8cc641;
+    background-color: #673291;
+    transition: all .2s ease-in-out;
+}
+
+#facebook:hover {
+    color: white;
+    background-color: #3B5998;
+    transition: all .2s ease-in-out;
+}
